@@ -8,11 +8,11 @@ def join_nested_strings(src)
     while element_index < src[row_index].count do
       if src[row_index][element_index].is_a?String
         string_result << src[row_index][element_index]
-      element_index += 1
+      element_index
     end
-    row_index += 1
+    element_index += 1 
   end
-  strings << string_array.join
-  return strings
+  row_index += 1
 end
+string_result.join(" ")
 end
