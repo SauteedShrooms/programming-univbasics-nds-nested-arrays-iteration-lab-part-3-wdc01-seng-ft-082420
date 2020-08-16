@@ -1,6 +1,6 @@
 require 'pry'
 def join_nested_strings(src)
-  string_total = 0 
+  string_total = [] 
   row_index = 0 
   while row_index < src.length do
     element_index = 0
